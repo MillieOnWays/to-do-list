@@ -1,0 +1,182 @@
+/* Variables */
+:root {
+  --personal: #59c173;
+  --light: #dceeea;
+  --grey: #6d6e73;
+}
+/* End of Variables */
+
+/* Resets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* End of Resets */
+
+input,
+button {
+  border: none;
+  outline: none;
+  padding: 0.75em;
+  border: 1px solid var(--grey);
+}
+
+body {
+  font-family: "IBM Plex Serif", serif;
+  background: #59c173; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to bottom,
+    #5d26c1,
+    #a17fe0,
+    #59c173
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #5d26c1,
+    #a17fe0,
+    #59c173
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-attachment: fixed;
+  color: aliceblue;
+}
+
+.app {
+  width: 95%;
+  margin: auto;
+}
+
+div#header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1em;
+}
+
+#header h2 {
+  font-size: 2.5rem;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+div.input-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 1.2em auto;
+  padding: 1em;
+}
+
+#date {
+  font-size: 1.75rem;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.user-input {
+  display: flex;
+  width: 400px;
+}
+
+.user-input input {
+  width: 80%;
+  background-color: var(--light);
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  font-family: inherit;
+}
+
+.user-input input:focus {
+  box-shadow: 0 0 8px var(--personal);
+  border: 1px solid var(--personal);
+}
+
+.user-input button {
+  width: 80%;
+  font-family: inherit;
+  cursor: pointer;
+  background-color: var(--personal);
+  width: fit-content;
+  color: black;
+  transition: 1s;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.user-input button:hover {
+  background-color: transparent;
+  color: aliceblue;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+/* To do List */
+
+.to-do-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.to-do-list i {
+  color: #c9d1c8;
+  cursor: pointer;
+}
+
+.to-do-list i {
+  color: #c9d1c8;
+  cursor: pointer;
+}
+
+.to-do-list .fa-pen-to-square {
+  color: #5b7065;
+}
+
+.to-do-list button {
+  padding: 8px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: inherit;
+  border: none;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  padding: 8px;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+}
+
+.input-controller {
+  display: flex;
+  gap: 10px;
+}
+
+.input-controller textarea {
+  width: 100%;
+  outline: none;
+  border: none;
+  resize: none;
+  line-height: 1.4;
+  color: white;
+  border-radius: 10px;
+  background-color: transparent;
+  font-size: 1.2rem;
+  font-family: inherit;
+  transition: all 0.3s ease-in-out;
+}
+
+textarea:focus {
+  box-shadow: 0 0 5px white;
+}
+
+.edit-controller {
+  display: flex;
+  gap: 5px;
+}
+
+.update-controller {
+  display: none;
+}

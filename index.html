@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <!-- Font Awesome -->
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="styles.css" />
+    <title>To Do List</title>
+  </head>
+  <body>
+    <main class="app">
+      <!-- Title Section -->
+      <div id="header">
+        <img src="icon.png" />
+        <h2>My To-do List</h2>
+      </div>
+      <!-- Title Section -->
+
+      <!-- Date and Input Section -->
+      <div class="input-header">
+        <h3><span id="date"></span></h3>
+        <div class="user-input">
+          <input type="text" id="item" placeholder="My today's tasks..." />
+          <button id="add-task-btn">Add task</button>
+        </div>
+      </div>
+      <!-- Date and Input Section -->
+
+      <!-- To do List Section -->
+      <div class="to-do-list"></div>
+      <!-- To do List Section -->
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
