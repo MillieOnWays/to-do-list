@@ -20,7 +20,7 @@ function displayDate() {
   date = date.toString().split(" ");
   document.getElementById(
     "date"
-  ).textContent = `${date[2]} of ${date[1]} ${date[3]}`;
+  ).textContent = ` ${date[1]} ${date[2]}, ${date[3]} (${date[0]})`;
 }
 
 document.querySelector("#add-task-btn").addEventListener("click", () => {
