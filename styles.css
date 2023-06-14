@@ -45,6 +45,16 @@ body {
   margin: auto;
 }
 
+a {
+  color: aliceblue;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0.5em;
+  font-size: 1.1rem;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 div#header {
   display: flex;
   align-items: flex-end;
